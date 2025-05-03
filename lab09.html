@@ -1,0 +1,70 @@
+<!-- 
+Lab 9 - HTML Forms
+
+I chose Hozier as the theme for this form because my previous lab was focused on his music and biography. 
+Picking the questions was easy because I already knew a lot about the artist
+I learned how fieldsets help with organizing related options and how hidden fields can store backend data invisibly. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9 - HTML Forms</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <form method="post" action="#">
+
+        <input type="hidden" name="studentID" value="32315646">
+        <input type="hidden" name="favoriteFruit" value="Mango">
+
+        <label for="name">Your Name:</label><br>.
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone-number">Phone Number:</label><br>
+        <input type="text" id="phone-number" name="phoneNumber"><br><br>
+
+        <fieldset>
+            <legend>You and Hozier!</legend>
+
+            <h3>Which of Hozier's Tour's Have You Been To?</h3>
+
+            <label for="hozier">Tour 1: Hozier</label>
+            <input type="checkbox" id="hozier" name="concertExperience" value="album1"><br>
+
+            <label for="wasteland-baby">Tour 2: Wasteland Baby!</label>
+            <input type="checkbox" id="wasteland-baby" name="concertExperience" value="album2"><br>
+
+            <label for="unreal-unearth">Tour 3: Unreal Unearth</label>
+            <input type="checkbox" id="unreal-unearth" name="concertExperience" value="album3"><br>
+
+            <label for="music-festival">Music Festival</label>
+            <input type="checkbox" id="music-festival" name="concertExperience" value="musicFestival"><br><br>
+
+            <h3>Which of Hozier's Albums is Your Favorite?</h3>
+            
+            <input type="radio" id="album1" name="favoriteAlbum" value="Hozier">
+            <label for="album1">Hozier</label><br>
+
+            <input type="radio" id="album2" name="favoriteAlbum" value="Wasteland Baby!">
+            <label for="album2">Wasteland Baby!</label><br>
+
+            <input type="radio" id="album3" name="favoriteAlbum" value="Unreal Unearth">
+            <label for="album3">Unreal Unearth</label><br>
+        </fieldset><br>
+
+        <label for="message">Tell us why you love Hozier:</label><br>
+        <textarea id="message" name="fanMessage" rows="5" cols="40"></textarea><br><br>
+
+        <button type="submit">Send Now</button>
+
+    </form>
+
+</body>
+</html>
