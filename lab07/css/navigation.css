@@ -1,0 +1,45 @@
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none; /* remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* align items horizontally */
+    justify-content: center; /* center menu items */
+    background-color: #0f3460; /* menu background */
+    border-radius: 10px; /* rounded corners */
+    overflow: hidden;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block; 
+    padding: 15px 20px;
+    color: #17c3b2; /* contrasting text color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px; 
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #ff4c29; 
+    color: white;
+    border-radius: 5px;
+}
+
+/* highlight the current page */
+nav ul li a.is-current {
+    background-color: #ffa62b; /* diff color for the current page */
+    color: #1a1a2e;
+    font-weight: bold;
+    border-bottom: 3px solid #ff4c29;
+}
